@@ -38,12 +38,6 @@ body {
     transform: translateY(-2px);
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-
 .page {
     display: grid;
 

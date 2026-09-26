@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 40px;
+    background-color: #222;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.links a:hover {
+    color: lightblue;
+    transform: translateY(-2px);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.gallery-description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.image-card {
+    position: relative;
+
+    background-color: white;
+
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
+}
+
+.image-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.image-card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.3s;
+}
+
+.image-card:hover img {
+    transform: scale(1.05);
+}
+
+.caption {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding: 18px;
+
+    background-color: rgba(0, 0, 0, 0.65);
+
+    color: white;
+    text-align: center;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    opacity: 0;
+
+    transition: 0.3s;
+}
+
+.image-card:hover .caption {
+    opacity: 1;
+}
